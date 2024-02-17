@@ -35,7 +35,6 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 */
-
 .card-container {
   display: flex;
   justify-content: space-around;
@@ -61,6 +60,22 @@
   padding: 16px;
 }
 
+.card-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.card-tag {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* White text */
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px; /* Adds spacing below each tag if they wrap */
+}
+
 .card-title {
   font-size: 1.25rem;
   font-weight: bold;
@@ -79,12 +94,22 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-bottom: 16px;
 }
 
 .card-button:hover {
-  background: #333333;
+  background: #333333; /* Slightly lighter black on hover */
 }
 
+.card-footer {
+  text-align: center;
+}
+
+.card-date {
+  color: #666666;
+  font-size: 0.75rem;
+  display: block; /* Makes the date appear on its own line below the button */
+}
 
 html {
   line-height: 1.5;
